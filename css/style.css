@@ -1,4 +1,4 @@
-/* ======= global css ======= */
+ /* ======= global css ======= */
 :root {
     --primary-text-color: #757575;
     --title-color: #212121;
@@ -72,7 +72,7 @@ button {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} 
 
 /* ======= header css ======= */
 
@@ -160,6 +160,7 @@ button {
 .btn-modal-close::after {
     transform: rotate(-45deg);
 }
+
 
 /* =============== / модалка =============== */
 
