@@ -10,7 +10,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--white-text-color);
+    color: $white-text-color;
 
     margin-bottom: 20px;
 }
@@ -26,9 +26,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background: var(--hero-footer-bg-color);
+    background: $hero-footer-bg-color;
 
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .form-footer--wrapper .mail::placeholder {
@@ -56,15 +56,15 @@
     border: transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
+    background-color: $accent-color;
+    color: $white-text-color;
 
-    transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
+    transition: background-color 250ms $time-distribution-function, color 250ms $time-distribution-function;
 }
 
 .form-footer--wrapper .btn:hover {
-    background: var(--bg-color-white);
-    color: var(--accent-color);
+    background:$bg-color-white;
+    color: $accent-color;
 }
 
 .form-footer--wrapper .btn::before {
@@ -78,7 +78,7 @@
 
     background: url(../images/system/icon-send-white.svg) no-repeat;
 
-    transition: transform 250ms var(--time-distribution-function);
+    transition: transform 250ms $time-distribution-function;
 }
 
 .form-footer--wrapper .btn:hover:before {
@@ -97,7 +97,7 @@
     background: url(../images/system/icon-send-accent.svg) no-repeat;
 
     transform: translateY(24px);
-    transition: transform 250ms var(--time-distribution-function);
+    transition: transform 250ms $time-distribution-function;
 }
 
 .form-footer--wrapper .btn:hover::after {

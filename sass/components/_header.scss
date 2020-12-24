@@ -35,7 +35,7 @@
     padding: 32px 0;
 
     color: $title-color;
-    transition: color 250ms var(--time-distribution-function);
+    transition: color 250ms $time-distribution-function;
 
     &:hover,
     &:focus {
@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
 
-    transition: 250ms var(--time-distribution-function);
+    transition: 250ms $time-distribution-function;
 
     color: $primary-text-color;
 

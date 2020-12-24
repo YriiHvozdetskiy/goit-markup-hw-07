@@ -1,4 +1,3 @@
-
 .works {
     padding: 94px 0px;
 }
@@ -13,7 +12,7 @@
     line-height: 1.17;
     text-align: center;
 
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .works .list {
@@ -46,5 +45,5 @@
     text-transform: uppercase;
     padding: 27px;
 
-    color: var(--white-text-color);
+    color: $white-text-color;
 }

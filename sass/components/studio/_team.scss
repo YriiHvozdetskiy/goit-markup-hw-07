@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    background-color: var(--bg-color);
+    background-color:$bg-color
 }
 
 .team .main-title {
@@ -11,7 +11,7 @@
     line-height: 1.17;
     text-align: center;
 
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .description {
@@ -44,7 +44,7 @@
     font-size: 16px;
     line-height: 1.19;
 
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .description .text {
@@ -67,15 +67,15 @@
     height: 44px;
     border-radius: 50%;
 
-    transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
+    transition: background-color 250ms $time-distribution-function, color 250ms $time-distribution-function;
 
-    color: var(--icon-current-color);
+    color: $icon-current-color;
 }
 
 .network-link:hover,
 .network-link:focus {
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
+    background-color:$accent-color;
+    color:$white-text-color;
 }
 
 .network-icon {

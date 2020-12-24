@@ -30,13 +30,13 @@
     padding-left: 42px;
     padding-right: 42px;
 
-    transition: border-color 250ms var(--time-distribution-function);
+    transition: border-color 250ms $time-distribution-function;
 }
 
 .form-item input:focus,
 .form-item .textarea:focus {
-    border-color: var(--accent-color);
-    transition: border-color 250ms var(--time-distribution-function);
+    border-color: $accent-color;
+    transition: border-color 250ms  $time-distribution-function;
 }
 
 .form-item .label-text {
@@ -45,7 +45,7 @@
     left: 42px;
 
     transform: translateY(-50%);
-    transition: transform 250ms var(--time-distribution-function);
+    transition: transform 250ms $time-distribution-function;
 }
 
 .form-item .textarea+.label-text {
@@ -54,16 +54,16 @@
 }
 
 .form-item .textarea:focus+.label-text {
-    color: var(--accent-color);
+    color: $accent-color;
     transform: translate(-25px, -40px);
-    transition: color 250ms var(--time-distribution-function), transform 250ms var(--time-distribution-function);
+    transition: color 250ms  $time-distribution-function, transform 250ms $time-distribution-function;
 }
 
 .form-item input:focus+.label-text,
 .form-item .textarea:focus+.label-text {
-    color: var(--accent-color);
+    color: $accent-color;
     transform: translate(-25px, -40px);
-    transition: color 250ms var(--time-distribution-function), transform 250ms var(--time-distribution-function);
+    transition: color 250ms $time-distribution-function, transform 250ms $time-distribution-function;
 }
 
 .form-item .textarea:focus+.label-text {
@@ -76,13 +76,13 @@
     left: 12px;
 
     transform: translateY(-50%);
-    transition: fill 250ms var(--time-distribution-function);
+    transition: fill 250ms $time-distribution-function;
 
 }
 
 .form-item input:focus~.icon {
     fill: currentColor;
-    transition: fill 250ms var(--time-distribution-function);
+    transition: fill 250ms $time-distribution-function;
 }
 
 .form-item input:focus+label,
@@ -103,7 +103,7 @@
 
     margin-bottom: 30px;
 
-    color: var(--title-color);
+    color:$title-color;
 }
 
 .form-modal--group .label-text {
@@ -116,7 +116,7 @@
 .form-item .icon {
     width: 18px;
     height: 18px;
-    color: var(--accent-color);
+    color: $accent-color;
     pointer-events: none;
 }
 
@@ -140,7 +140,7 @@
     line-height: 1.71;
     text-decoration-line: underline;
 
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .form-modal--group .form-btn.btn {
@@ -148,7 +148,7 @@
 }
 
 .form-modal--group .form-btn.btn:hover {
-    border: solid 1px var(--accent-color);
+    border: solid 1px $accent-color;
 }
 
 .form-item .checkbox {
@@ -173,7 +173,7 @@
     width: 16px;
     height: 15px;
 
-    border: solid 2px var(--title-color);
+    border: solid 2px $title-color;
     border-radius: 2px;
     transform: translateY(-50%);
 }
@@ -183,8 +183,8 @@
     background: url(../images/system/icon-check.svg);
     background-size: contain;
     background-position:50% 50%;
-    border-color:var(--accent-color);
-    background-color: var(--accent-color);
+    border-color:$accent-color;
+    background-color: $accent-color;
     background-origin:border-box;
     border-radius:2px;
     }

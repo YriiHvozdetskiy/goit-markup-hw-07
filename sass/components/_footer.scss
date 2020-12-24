@@ -11,7 +11,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--hero-footer-bg-color);
+    background-color: $hero-footer-bg-color;
 }
 
 .footer .logo {
@@ -20,11 +20,11 @@
     font-size: 26px;
     line-height: 1.19;
 
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .footer .logo span {
-    color: var(--white-text-color);
+    color:  $white-text-color;
 }
 
 .footer .address {
@@ -34,7 +34,7 @@
     line-height: 1.71;
     margin-top: 20px;
 
-    color: var(--white-text-color);
+    color:  $white-text-color;
 }
 
 .address .contact {
@@ -43,14 +43,14 @@
     line-height: 1.71;
     margin-top: 9px;
 
-    transition: color 250ms var(--time-distribution-function);
+    transition: color 250ms $time-distribution-function;
 
     color: rgba(255, 255, 255, 0.6);
 }
 
 .address .contact:hover,
 .address .contact:focus {
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .join {
@@ -64,7 +64,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .join-list {
@@ -81,15 +81,15 @@
     padding: 12px;
     border-radius: 50%;
 
-    transition: background-color 250ms var(--time-distribution-function);
+    transition: background-color 250ms $time-distribution-function;
 
     background: rgba(255, 255, 255, 0.1);
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .item-link:hover,
 .item-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
 }
 

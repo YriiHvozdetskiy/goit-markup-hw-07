@@ -18,10 +18,10 @@
   line-height: 1.62;
   padding: 6px 22px;
   border-radius: 4px;
-  -webkit-transition: 250ms var(--time-distribution-function);
-  transition: 250ms var(--time-distribution-function);
-  color: var(--title-color);
-  background: var(--bg-color);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #212121;
+  background: #f5f4fa;
   border: transparent;
 }
 
@@ -35,8 +35,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--white-text-color);
-  background: var(--accent-color);
+  color: #ffffff;
+  background: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -51,8 +51,8 @@
 }
 
 .samples .link {
-  -webkit-transition: 250ms var(--time-distribution-function);
-  transition: 250ms var(--time-distribution-function);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .samples .link:hover,
@@ -85,10 +85,10 @@
           align-items: center;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms var(--time-distribution-function);
-  transition: -webkit-transform 250ms var(--time-distribution-function);
-  transition: transform 250ms var(--time-distribution-function);
-  transition: transform 250ms var(--time-distribution-function), -webkit-transform 250ms var(--time-distribution-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(33, 150, 243, 0.9);
 }
 
@@ -114,7 +114,7 @@
   font-size: 18px;
   line-height: 1.56;
   padding: 24px;
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .samples .title {
@@ -122,14 +122,14 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .samples .text {
   font-size: 16px;
   line-height: 1.88;
   margin: 4px 0 0;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 html {
@@ -208,11 +208,11 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .logo span {
-  color: var(--header-logo-span);
+  color: #000000;
 }
 
 .header {
@@ -257,8 +257,8 @@ button {
   letter-spacing: 0.02em;
   padding: 32px 0;
   color: #212121;
-  -webkit-transition: color 250ms var(--time-distribution-function);
-  transition: color 250ms var(--time-distribution-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__link:hover, .menu__link:focus {
@@ -313,8 +313,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 250ms var(--time-distribution-function);
-  transition: 250ms var(--time-distribution-function);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
 }
 
@@ -353,7 +353,7 @@ button {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--hero-footer-bg-color);
+  background-color: #2f303a;
 }
 
 .footer .logo {
@@ -361,11 +361,11 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer .logo span {
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .footer .address {
@@ -374,7 +374,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .address .contact {
@@ -382,14 +382,14 @@ button {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 9px;
-  -webkit-transition: color 250ms var(--time-distribution-function);
-  transition: color 250ms var(--time-distribution-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
 
 .address .contact:hover,
 .address .contact:focus {
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .join {
@@ -402,7 +402,7 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .join-list {
@@ -424,15 +424,15 @@ button {
   display: inline-flex;
   padding: 12px;
   border-radius: 50%;
-  -webkit-transition: background-color 250ms var(--time-distribution-function);
-  transition: background-color 250ms var(--time-distribution-function);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(255, 255, 255, 0.1);
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .item-link:hover,
 .item-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .join-icon {
@@ -457,7 +457,7 @@ button {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--hero-footer-bg-color);
+  background-color: #2f303a;
 }
 
 .footer .logo {
@@ -465,11 +465,11 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer .logo span {
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .footer .address {
@@ -478,7 +478,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .address .contact {
@@ -486,14 +486,14 @@ button {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 9px;
-  -webkit-transition: color 250ms var(--time-distribution-function);
-  transition: color 250ms var(--time-distribution-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
 
 .address .contact:hover,
 .address .contact:focus {
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .join {
@@ -506,7 +506,7 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .join-list {
@@ -528,15 +528,15 @@ button {
   display: inline-flex;
   padding: 12px;
   border-radius: 50%;
-  -webkit-transition: background-color 250ms var(--time-distribution-function);
-  transition: background-color 250ms var(--time-distribution-function);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(255, 255, 255, 0.1);
-  color: var(--white-text-color);
+  color: #ffffff;
 }
 
 .item-link:hover,
 .item-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .join-icon {
@@ -559,7 +559,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -573,8 +573,8 @@ button {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background: var(--hero-footer-bg-color);
-  color: var(--white-text-color);
+  background: #2f303a;
+  color: #ffffff;
 }
 
 .form-footer--wrapper .mail::-webkit-input-placeholder {
@@ -620,15 +620,15 @@ button {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
-  -webkit-transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
-  transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer--wrapper .btn:hover {
-  background: var(--bg-color-white);
-  color: var(--accent-color);
+  background: #fff;
+  color: #2196f3;
 }
 
 .form-footer--wrapper .btn::before {
@@ -639,10 +639,10 @@ button {
   top: 13px;
   right: 28px;
   background: url(../images/system/icon-send-white.svg) no-repeat;
-  -webkit-transition: -webkit-transform 250ms var(--time-distribution-function);
-  transition: -webkit-transform 250ms var(--time-distribution-function);
-  transition: transform 250ms var(--time-distribution-function);
-  transition: transform 250ms var(--time-distribution-function), -webkit-transform 250ms var(--time-distribution-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer--wrapper .btn:hover:before {
@@ -660,10 +660,10 @@ button {
   background: url(../images/system/icon-send-accent.svg) no-repeat;
   -webkit-transform: translateY(24px);
           transform: translateY(24px);
-  -webkit-transition: -webkit-transform 250ms var(--time-distribution-function);
-  transition: -webkit-transform 250ms var(--time-distribution-function);
-  transition: transform 250ms var(--time-distribution-function);
-  transition: transform 250ms var(--time-distribution-function), -webkit-transform 250ms var(--time-distribution-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer--wrapper .btn:hover::after {
