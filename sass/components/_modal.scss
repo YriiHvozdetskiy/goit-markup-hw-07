@@ -1,4 +1,3 @@
-
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -18,7 +17,7 @@
 }
 
 /*! модалка Є  (аніміруєм появу)  */
-.backdrop .modal {
+.hero__modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,7 +35,7 @@
 }
 
 /*!  мадалки НЕМАЄ  */
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .hero__modal {
     transform: translate(-50%, -50%) scale(2);
     opacity: 0;
     transition: transform 250ms $time-distribution-function, opacity 250ms $time-distribution-function;
@@ -52,31 +51,32 @@
     border-radius: 50%;
 
     background: $bg-color;
-}
 
-.btn-modal-close::before,
-.btn-modal-close::after {
-    position: absolute;
-    content: '';
-    top: 7px;
-    left: 14px;
-    height: 14px;
-    width: 1px;
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        left: 14px;
+        height: 14px;
+        width: 1px;
 
-    background: #000;
-    transition: 250ms $time-distribution-function;
+        background: #000;
+        transition: 250ms $time-distribution-function;
+    }
 
-}
+    &::before {
+        transform: rotate(45deg);
+    }
 
-.btn-modal-close:hover::before,
-.btn-modal-close:hover::after {
-    opacity: 0.3;
-}
+    &::after {
+        transform: rotate(-45deg);
+    }
 
-.btn-modal-close::before {
-    transform: rotate(45deg);
-}
-
-.btn-modal-close::after {
-    transform: rotate(-45deg);
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+        opacity: 0.3;
+    }
 }
