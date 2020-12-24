@@ -10,6 +10,7 @@
 }
 
 .header-container {
+    @extend .container;
     display: flex;
 }
 
@@ -33,17 +34,17 @@
     letter-spacing: 0.02em;
     padding: 32px 0;
 
-    color: var(--title-color);
+    color: $title-color;
     transition: color 250ms var(--time-distribution-function);
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color:$accent-color;
     }
 
     &--active {
         position: relative;
-        color: var(--accent-color);
+        color: $accent-color;
         &::after {
             position: absolute;
             bottom: -1px;
@@ -54,7 +55,7 @@
             width: 100%;
             border-radius: 2px;
 
-            background: var(--accent-color);
+            background: $accent-color;
         }
     }
 }
@@ -92,11 +93,11 @@
 
     transition: 250ms var(--time-distribution-function);
 
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: $accent-color;
     }
 }
 
