@@ -101,9 +101,6 @@ button {
   left: 0;
   right: 0;
   z-index: 3;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-bottom: 1px solid #ececec;
   background-color: #fff;
 }
@@ -118,12 +115,6 @@ button {
   margin-right: 93px;
 }
 
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +124,7 @@ button {
           align-items: center;
 }
 
-.header__menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,12 +141,16 @@ button {
   transition: color 250ms var(--time-distribution-function);
 }
 
-.menu__link.active {
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
+
+.menu__link--active {
   position: relative;
   color: var(--accent-color);
 }
 
-.menu__link.active::after {
+.menu__link--active::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -166,11 +161,19 @@ button {
   background: var(--accent-color);
 }
 
+/* 
+?.menu__item + .menu__item {
+    ?margin-left: 50px;
+}
+*/
 .menu__item + .menu__item {
   margin-left: 50px;
 }
 
 .header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
 }
 
@@ -195,25 +198,23 @@ button {
   color: var(--primary-text-color);
 }
 
-.icon-item-email {
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__icon--email {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
 }
 
-.icon-item-smartphone {
+.contacts__icon--smartphone {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.menu__link:hover,
-.menu__link:focus,
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
 }
 
 .backdrop.is-hidden {

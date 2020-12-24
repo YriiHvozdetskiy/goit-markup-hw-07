@@ -1,11 +1,9 @@
-
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 3;
-    align-items: center;
 
     border-bottom: 1px solid #ececec;
     background-color: #fff;
@@ -17,10 +15,6 @@
 
 .header__logo {
     margin-right: 93px;
-}
-
-.header__contacts {
-    display: flex;
 }
 
 .header__nav {
@@ -42,32 +36,43 @@
     color: var(--title-color);
     transition: color 250ms var(--time-distribution-function);
 
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &--active {
+        position: relative;
+        color: var(--accent-color);
+        &::after {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+
+            content: "";
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+
+            background: var(--accent-color);
+        }
+    }
 }
 
-.menu__link.active {
-    position: relative;
-    color: var(--accent-color);
+/* 
+?.menu__item + .menu__item {
+    ?margin-left: 50px;
 }
+*/
 
-.menu__link.active::after {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-
-    content: "";
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-
-    background: var(--accent-color);
-}
-
-
-.menu__item + .menu__item {
-    margin-left: 50px;
+.menu__item {
+    & + & {
+        margin-left: 50px;
+    }
 }
 
 .header__contacts {
+    display: flex;
     margin-left: auto;
 }
 
@@ -88,30 +93,24 @@
     transition: 250ms var(--time-distribution-function);
 
     color: var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.icon-item-email {
-    width: 16px;
-    height: 12px;
+.contacts__icon {
     margin-right: 10px;
-
     fill: currentColor;
+
+    &--email {
+        width: 16px;
+        height: 12px;
+    }
+
+    &--smartphone {
+        width: 10px;
+        height: 16px;
+    }
 }
-
-.icon-item-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-
-    fill: currentColor;
-}
-
-
-
-.menu__link:hover,
-.menu__link:focus,
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
-}
-
