@@ -2,10 +2,10 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    background-color:$bg-color
+    background-color: $bg-color;
 }
 
-.team .main-title {
+.team__main-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -14,32 +14,31 @@
     color: $title-color;
 }
 
-.description {
+.team__description {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
     margin-top: 50px;
 }
 
-.description .wrapper {
+.team__wrapper {
     padding: 30px 32px;
-
 }
 
-.description .item {
+.team__item {
     margin: 15px;
     text-align: center;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.description .img {
+.team__img {
     display: block;
 }
 
-.description .title {
+.team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -47,19 +46,19 @@
     color: $title-color;
 }
 
-.description .text {
+.team__text {
     font-size: 16px;
     line-height: 1.19;
     margin: 10px 0 0;
 }
 
-.social-networks {
+.team__social-networks {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
 }
 
-.network-link {
+.team__network-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,19 +69,17 @@
     transition: background-color 250ms $time-distribution-function, color 250ms $time-distribution-function;
 
     color: $icon-current-color;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $white-text-color;
+    }
 }
 
-.network-link:hover,
-.network-link:focus {
-    background-color:$accent-color;
-    color:$white-text-color;
-}
-
-.network-icon {
-    fill: currentColor;
-}
-
-.social-networks .network-icon {
+.team__network-icon {
     width: 20px;
     height: 20px;
+
+    fill: currentColor;
 }

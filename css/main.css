@@ -879,7 +879,7 @@ button {
   background-color: #f5f4fa;
 }
 
-.team .main-title {
+.team__main-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -887,7 +887,7 @@ button {
   color: #212121;
 }
 
-.description {
+.team__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,37 +897,37 @@ button {
   margin-top: 50px;
 }
 
-.description .wrapper {
+.team__wrapper {
   padding: 30px 32px;
 }
 
-.description .item {
+.team__item {
   margin: 15px;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.description .img {
+.team__img {
   display: block;
 }
 
-.description .title {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: #212121;
 }
 
-.description .text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   margin: 10px 0 0;
 }
 
-.social-networks {
+.team__social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,7 +937,7 @@ button {
   margin-top: 16px;
 }
 
-.network-link {
+.team__network-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,19 +955,15 @@ button {
   color: #afb1b8;
 }
 
-.network-link:hover,
-.network-link:focus {
+.team__network-link:hover, .team__network-link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
 
-.network-icon {
-  fill: currentColor;
-}
-
-.social-networks .network-icon {
+.team__network-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .customers {
