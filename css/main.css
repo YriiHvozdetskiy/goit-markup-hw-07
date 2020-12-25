@@ -603,7 +603,7 @@ button {
   fill: currentColor;
 }
 
-.form-footer--wrapper {
+.form-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
