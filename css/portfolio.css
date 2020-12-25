@@ -534,7 +534,7 @@ button {
           justify-content: space-between;
 }
 
-.form-footer--group .text {
+.form-footer__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -543,7 +543,7 @@ button {
   margin-bottom: 20px;
 }
 
-.form-footer--wrapper .mail {
+.form-footer__mail {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -557,31 +557,31 @@ button {
   color: #ffffff;
 }
 
-.form-footer--wrapper .mail::-webkit-input-placeholder {
+.form-footer__mail::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer--wrapper .mail:-ms-input-placeholder {
+.form-footer__mail:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer--wrapper .mail::-ms-input-placeholder {
+.form-footer__mail::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer--wrapper .mail::placeholder {
+.form-footer__mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer--wrapper .btn {
+.form-footer__btn {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,13 +606,23 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-footer--wrapper .btn:hover {
+.form-footer__btn:hover {
   background: #fff;
   color: #2196f3;
 }
 
-.form-footer--wrapper .btn::before {
-  content: '';
+.form-footer__btn:hover::before {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+
+.form-footer__btn:hover::after {
+  -webkit-transform: translateY(-37px);
+          transform: translateY(-37px);
+}
+
+.form-footer__btn::before {
+  content: "";
   width: 24px;
   height: 24px;
   position: absolute;
@@ -625,13 +635,8 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-footer--wrapper .btn:hover:before {
-  -webkit-transform: translateY(-24px);
-          transform: translateY(-24px);
-}
-
-.form-footer--wrapper .btn::after {
-  content: '';
+.form-footer__btn::after {
+  content: "";
   width: 24px;
   height: 24px;
   position: absolute;
@@ -644,10 +649,5 @@ button {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-footer--wrapper .btn:hover::after {
-  -webkit-transform: translateY(-37px);
-          transform: translateY(-37px);
 }
 /*# sourceMappingURL=portfolio.css.map */

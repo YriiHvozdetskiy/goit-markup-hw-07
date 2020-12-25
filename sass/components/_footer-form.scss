@@ -1,11 +1,9 @@
-
 .form-footer--wrapper {
     display: flex;
     justify-content: space-between;
-
 }
 
-.form-footer--group .text {
+.form-footer__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -15,7 +13,7 @@
     margin-bottom: 20px;
 }
 
-.form-footer--wrapper .mail {
+.form-footer__mail {
     width: 358px;
     height: 50px;
 
@@ -29,16 +27,15 @@
     background: $hero-footer-bg-color;
 
     color: $white-text-color;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.form-footer--wrapper .mail::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
-.form-footer--wrapper .btn {
+.form-footer__btn {
     position: relative;
     display: flex;
     align-items: center;
@@ -60,46 +57,46 @@
     color: $white-text-color;
 
     transition: background-color 250ms $time-distribution-function, color 250ms $time-distribution-function;
-}
 
-.form-footer--wrapper .btn:hover {
-    background:$bg-color-white;
-    color: $accent-color;
-}
+    &:hover {
+        background: $bg-color-white;
+        color: $accent-color;
 
-.form-footer--wrapper .btn::before {
-    content: '';
-    width: 24px;
-    height: 24px;
+        &::before {
+            transform: translateY(-24px);
+        }
 
-    position: absolute;
-    top: 13px;
-    right: 28px;
+        &::after {
+            transform: translateY(-37px);
+        }
+    }
 
-    background: url(../images/system/icon-send-white.svg) no-repeat;
+    &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
 
-    transition: transform 250ms $time-distribution-function;
-}
+        position: absolute;
+        top: 13px;
+        right: 28px;
 
-.form-footer--wrapper .btn:hover:before {
-    transform: translateY(-24px);
-}
+        background: url(../images/system/icon-send-white.svg) no-repeat;
 
-.form-footer--wrapper .btn::after {
-    content: '';
-    width: 24px;
-    height: 24px;
+        transition: transform 250ms $time-distribution-function;
+    }
 
-    position: absolute;
-    bottom: -24px;
-    right: 28px;
+    &::after {
+        content: "";
+        width: 24px;
+        height: 24px;
 
-    background: url(../images/system/icon-send-accent.svg) no-repeat;
+        position: absolute;
+        bottom: -24px;
+        right: 28px;
 
-    transform: translateY(24px);
-    transition: transform 250ms $time-distribution-function;
-}
+        background: url(../images/system/icon-send-accent.svg) no-repeat;
 
-.form-footer--wrapper .btn:hover::after {
-    transform: translateY(-37px);
+        transform: translateY(24px);
+        transition: transform 250ms $time-distribution-function;
+    }
 }
