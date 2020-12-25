@@ -14,30 +14,25 @@
     background-color: $hero-footer-bg-color;
 }
 
-.footer .logo {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    color: $accent-color;
+.footer__logo {
+    @extend %logo;
 }
 
-.footer .logo span {
-    color:  $white-text-color;
+.footer__logo span {
+    color: $white-text-color;
 }
 
-.footer .address {
+.address {
     width: 231px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     margin-top: 20px;
 
-    color:  $white-text-color;
+    color: $white-text-color;
 }
 
-.address .contact {
+.address__contact {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -46,11 +41,11 @@
     transition: color 250ms $time-distribution-function;
 
     color: rgba(255, 255, 255, 0.6);
-}
 
-.address .contact:hover,
-.address .contact:focus {
-    color: $white-text-color;
+    &:hover,
+    &:focus {
+        color: $white-text-color;
+    }
 }
 
 .join {
@@ -72,8 +67,10 @@
     justify-content: center;
 }
 
-.list-item:not(:nth-last-child(1)) {
-    margin-right: 10px;
+.list-item {
+    &:not(:nth-last-child(1)) {
+        margin-right: 10px;
+    }
 }
 
 .item-link {
@@ -85,12 +82,11 @@
 
     background: rgba(255, 255, 255, 0.1);
     color: $white-text-color;
-}
 
-.item-link:hover,
-.item-link:focus {
-    background-color: $accent-color;
-
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 
 .join-icon {

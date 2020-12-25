@@ -21,7 +21,7 @@
   border-color: #fff;
 }
 
-.header__logo {
+.header__logo, .footer__logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +29,7 @@
   color: #2196f3;
 }
 
-.header__logo span {
+.header__logo span, .footer__logo span {
   color: #000000;
 }
 
@@ -528,19 +528,11 @@ button {
   background-color: #2f303a;
 }
 
-.footer .logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #2196f3;
-}
-
-.footer .logo span {
+.footer__logo span {
   color: #ffffff;
 }
 
-.footer .address {
+.address {
   width: 231px;
   font-style: normal;
   font-size: 14px;
@@ -549,7 +541,7 @@ button {
   color: #ffffff;
 }
 
-.address .contact {
+.address__contact {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -559,8 +551,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address .contact:hover,
-.address .contact:focus {
+.address__contact:hover, .address__contact:focus {
   color: #ffffff;
 }
 
@@ -602,8 +593,7 @@ button {
   color: #ffffff;
 }
 
-.item-link:hover,
-.item-link:focus {
+.item-link:hover, .item-link:focus {
   background-color: #2196f3;
 }
 
