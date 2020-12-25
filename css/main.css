@@ -140,9 +140,9 @@ button {
 }
 
 .menu__link {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 500;
   letter-spacing: 0.02em;
   padding: 32px 0;
   color: #212121;
@@ -191,9 +191,10 @@ button {
 }
 
 .contacts__link {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 900;
+  letter-spacing: 0.03em;
   letter-spacing: 0.02em;
   padding: 32px 0;
   display: -webkit-box;
@@ -748,12 +749,12 @@ button {
 }
 
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
+  font-size: 50px;
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
 }
 

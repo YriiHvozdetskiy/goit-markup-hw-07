@@ -16,7 +16,7 @@
 
 .header__logo {
     margin-right: 93px;
-    @extend %logo
+    @extend %logo;
 }
 
 .header__nav {
@@ -29,18 +29,17 @@
 }
 
 .menu__link {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    font-weight: 500;
     letter-spacing: 0.02em;
     padding: 32px 0;
-
     color: $title-color;
     transition: color 250ms $time-distribution-function;
 
     &:hover,
     &:focus {
-        color:$accent-color;
+        color: $accent-color;
     }
 
     &--active {
@@ -83,9 +82,10 @@
 }
 
 .contacts__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    @include wordSize(14px, 1.14, 900);
     letter-spacing: 0.02em;
     padding: 32px 0;
 

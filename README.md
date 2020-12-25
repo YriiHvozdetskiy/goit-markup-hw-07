@@ -1,0 +1,1 @@
+в @mixin якщо вказуєм 4 аргумента н-д(@mixin wordSize($size, $height, $weight, $spacing)) то при обяві міхін(@include) має бути теж 4 значення (@include wordSize(50px, 2, 300, 0.06em)) або в міхін значення маюють бути по умол (@mixin wordSize($size:44px, $height:1.17, $weight:400, $spacing: 0.02em)) ПО ІНШОМУ БУДЕ ПОМИЛКА 4=4
