@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header-container">
             <nav class="header__nav">
-                <a class="header__logo logo" href="#">Web<span>Studio</span></a>
+                <a class="header__logo" href="#">Web<span>Studio</span></a>
                 <ul class="header__menu menu">
                     <li class="menu__item"><a class="menu__link menu__link--active" href="#">Студия</a></li>
                     <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
@@ -54,9 +54,10 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="hero__modal">
                     <button class="btn-modal-close" data-modal-close></button>
+                    <!-- =============== hero__form =============== -->
                     <form class="form-modal" autocomplete="on">
                         <div class="form-modal--group" role="group">
-                            <p class="form-modal--text">Оставьте свои данные, мы вам перезвоним</p>
+                            <p class="form-modal__text">Оставьте свои данные, мы вам перезвоним</p>
                             <ul class="form-modal--list">
                                 <li class="form-item">
                                     <input class="name" type="text" name="name" id="name" placeholder=" ">
@@ -84,7 +85,7 @@
                                     <label class="label-text " for="textarea">Комментарий</label>
                                 </li>
                                 <li class="form-item check">
-                                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox"  placeholder=" ">
+                                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" placeholder=" ">
                                     <label class="form-label" for="checkbox">
                                         Соглашаюсь с рассылкой и принимаю
                                         <a class="form-link" href="#">Условия договора</a>

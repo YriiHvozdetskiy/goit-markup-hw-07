@@ -16,6 +16,7 @@
 
 .header__logo {
     margin-right: 93px;
+    @extend %logo
 }
 
 .header__nav {
