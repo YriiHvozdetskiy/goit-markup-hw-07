@@ -775,7 +775,7 @@ button {
   padding-top: 94px;
 }
 
-.benefits .icon {
+.benefits__icon {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -790,12 +790,12 @@ button {
   background: #f5f4fa;
 }
 
-.benefits .icon-item {
+.benefits__icon-item {
   width: 70px;
   height: 70px;
 }
 
-.benefits .title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -803,13 +803,13 @@ button {
   color: #212121;
 }
 
-.benefits .text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   margin: 10px 0 0 0;
 }
 
-.benefits .list {
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,7 +818,7 @@ button {
   margin: -15px;
 }
 
-.benefits .item {
+.benefits__item {
   width: 270px;
   margin: 15px;
 }
