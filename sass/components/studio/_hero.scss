@@ -22,7 +22,7 @@
     // font-size: 44px;
     // line-height: 1.36;
     // letter-spacing: 0.06em;
-    @include wordSize(50px, 2, 300);
+    @include wordSize(44px, 1.36, 900, 0.06em);
     text-transform: uppercase;
     text-align: center;
 
@@ -33,5 +33,4 @@
     @extend %button;
 
     margin-top: 30px;
-    
 }
