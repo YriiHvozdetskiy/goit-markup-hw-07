@@ -32,11 +32,5 @@
     @extend %button;
 
     margin-top: 30px;
-    transition: color 250ms $time-distribution-function, background-color 250ms $time-distribution-function,
-        border-color 250ms $time-distribution-function;
-    &:hover {
-        color: $accent-color;
-        background-color: $bg-color-white;
-        border-color: $bg-color-white;
-    }
+    
 }

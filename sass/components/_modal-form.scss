@@ -1,97 +1,172 @@
-
 .form-item {
     position: relative;
     margin-bottom: 28px;
+
+    &:nth-last-child(2) {
+        margin-bottom: 20px;
+    }
+    &:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+
+    & :nth-last-child(3) {
+        width: 100%;
+        height: 40px;
+
+        padding-left: 42px;
+        padding-right: 42px;
+
+        transition: border-color 250ms $time-distribution-function;
+    }
 }
 
-.form-item:nth-last-child(2) {
-    margin-bottom: 20px;
+.form-item {
+    .textarea {
+        width: 100%;
+        height: 120px;
+
+        padding: 15px;
+        margin-bottom: 20px;
+
+        resize: none;
+    }
 }
 
-.form-item:nth-last-child(1) {
-    margin-bottom: 0px;
+.form-item {
+    .textarea,
+    input {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+    }
+}
+
+.form-item {
+    input:focus,
+    .textarea:focus {
+        border-color: $accent-color;
+        transition: border-color 250ms $time-distribution-function;
+    }
+}
+
+.form-item {
+    .label-text {
+        position: absolute;
+        top: 50%;
+        left: 42px;
+
+        transform: translateY(-50%);
+        transition: transform 250ms $time-distribution-function;
+    }
+}
+
+.form-item {
+    .form-link {
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration-line: underline;
+
+        color: $accent-color;
+    }
+}
+
+.form-item {
+    .form-label {
+        font-size: 14px;
+        line-height: 1.71;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0px;
+
+            width: 16px;
+            height: 15px;
+
+            border: solid 2px $title-color;
+            border-radius: 2px;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 .form-modal--list {
     margin-bottom: 30px;
 }
 
-.form-item .textarea,
-.form-item input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: none;
+.form-modal--group {
+    .label-text {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    }
 }
 
-.form-item :nth-last-child(3) {
-    width: 100%;
-    height: 40px;
+.form-modal--group {
+    .form-btn {
+        @extend %button;
+        margin-top: 0px;
+    }
 
-    padding-left: 42px;
-    padding-right: 42px;
-
-    transition: border-color 250ms $time-distribution-function;
+    & .form-btn:hover {
+        border-color: $accent-color;
+    }
 }
 
-.form-item input:focus,
-.form-item .textarea:focus {
-    border-color: $accent-color;
-    transition: border-color 250ms  $time-distribution-function;
-}
-
-.form-item .label-text {
-    position: absolute;
-    top: 50%;
-    left: 42px;
-
-    transform: translateY(-50%);
-    transition: transform 250ms $time-distribution-function;
-}
-
-.form-item .textarea+.label-text {
+.form-item .textarea + .label-text {
     top: 25px;
     left: 20px;
 }
 
-.form-item .textarea:focus+.label-text {
-    color: $accent-color;
-    transform: translate(-25px, -40px);
-    transition: color 250ms  $time-distribution-function, transform 250ms $time-distribution-function;
-}
-
-.form-item input:focus+.label-text,
-.form-item .textarea:focus+.label-text {
+.form-item .textarea:focus + .label-text {
     color: $accent-color;
     transform: translate(-25px, -40px);
     transition: color 250ms $time-distribution-function, transform 250ms $time-distribution-function;
 }
 
-.form-item .textarea:focus+.label-text {
+.form-item input:focus + .label-text,
+.form-item .textarea:focus + .label-text {
+    color: $accent-color;
+    transform: translate(-25px, -40px);
+    transition: color 250ms $time-distribution-function, transform 250ms $time-distribution-function;
+}
+
+.form-item .textarea:focus + .label-text {
     transform: translate(-15px, -45px);
 }
 
-.form-item .icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
+.form-item {
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
 
-    transform: translateY(-50%);
-    transition: fill 250ms $time-distribution-function;
+        width: 18px;
+        height: 18px;
 
+        color: $accent-color;
+
+        pointer-events: none;
+
+        transform: translateY(-50%);
+        transition: fill 250ms $time-distribution-function;
+    }
 }
 
-.form-item input:focus~.icon {
+.form-item input:focus ~ .icon {
     fill: currentColor;
     transition: fill 250ms $time-distribution-function;
 }
 
-.form-item input:focus+label,
-.form-item input:not(:placeholder-shown)+label:not(:nth-last-child(1)) {
+.form-item input:focus + label,
+.form-item input:not(:placeholder-shown) + label:not(:nth-last-child(1)) {
     transform: translate(-25px, -40px);
 }
 
-.form-item textarea:focus+label,
-.form-item textarea:not(:placeholder-shown)+label {
+.form-item textarea:focus + label,
+.form-item textarea:not(:placeholder-shown) + label {
     transform: translate(-15px, -45px);
 }
 
@@ -103,55 +178,10 @@
 
     margin-bottom: 30px;
 
-    color:$title-color;
+    color: $title-color;
 }
 
-.form-modal--group .label-text {
-    display: block;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-}
-
-.form-item .icon {
-    width: 18px;
-    height: 18px;
-    color: $accent-color;
-    pointer-events: none;
-}
-
-.form-item .textarea {
-    width: 100%;
-    height: 120px;
-
-    padding: 15px;
-    margin-bottom: 20px;
-
-    resize: none;
-}
-
-.form-item .form-label {
-    font-size: 14px;
-    line-height: 1.71;
-}
-
-.form-item .form-link {
-    font-size: 14px;
-    line-height: 1.71;
-    text-decoration-line: underline;
-
-    color: $accent-color;
-}
-
-.form-modal--group .form-btn.btn {
-    margin-top: 0px;
-}
-
-.form-modal--group .form-btn.btn:hover {
-    border: solid 1px $accent-color;
-}
-
-.form-item .checkbox {
+.checkbox {
     appearance: none;
     position: absolute;
     width: 1px;
@@ -163,28 +193,13 @@
     overflow: hidden;
 }
 
-
-.form-item .form-label::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0px;
-
-    width: 16px;
-    height: 15px;
-
-    border: solid 2px $title-color;
-    border-radius: 2px;
-    transform: translateY(-50%);
-}
-
-
-.checkbox:checked+ .form-label::after{
+.checkbox:checked + .form-label::after {
     background: url(../images/system/icon-check.svg);
     background-size: contain;
-    background-position:50% 50%;
-    border-color:$accent-color;
+    background-position: 50% 50%;
+    border-color: $accent-color;
     background-color: $accent-color;
-    background-origin:border-box;
-    border-radius:2px;
-    }
+    background-origin: border-box;
+    border-radius: 2px;
+}
+
