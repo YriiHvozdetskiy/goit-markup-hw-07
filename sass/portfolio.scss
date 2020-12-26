@@ -2,15 +2,15 @@
 @import './utils/mixin';
 @import './utils/placeholders';
 
+@import './components/common/common';
+
+@import './components/common/header';
+@import './components/common/footer';
+@import './components/common/footer-form';
+
+@import './components/portfolio/portfolio';
 @import './components/portfolio/filter';
 @import './components/portfolio/samples';
 
-@import './components/common';
-@import './components/header';
-
-
-@import './components/footer';
-@import './components/footer';
-@import './components/footer-form';
 
 

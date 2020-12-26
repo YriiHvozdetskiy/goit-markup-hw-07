@@ -2,16 +2,16 @@
 @import './utils/mixin';
 @import './utils/placeholders';
 
-@import './components/common';
+@import './components/common/common';
 
-@import './components/header';
-@import './components/modal';
-@import './components/modal-form';
-@import './components/footer';
-@import './components/footer-form';
+@import './components/common/header';
+@import './components/common/footer';
+@import './components/common/footer-form';
 
 
 @import './components/studio/hero';
+@import './components/studio/modal';
+@import './components/studio/modal-form';
 @import './components/studio/benefits';
 @import './components/studio/works';
 @import './components/studio/team';
