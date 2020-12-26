@@ -960,7 +960,7 @@ button {
   padding: 94px 0px;
 }
 
-.customers .title {
+.customers__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -969,7 +969,7 @@ button {
   color: #212121;
 }
 
-.customers .company {
+.customers__company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,11 +978,11 @@ button {
           justify-content: center;
 }
 
-.company-item:not(:nth-last-child(1)) {
+.company__item:not(:nth-last-child(1)) {
   margin-right: 30px;
 }
 
-.company-link {
+.company__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,15 +1003,14 @@ button {
   color: #afb1b8;
 }
 
-.company-link:hover,
-.company-link:focus {
+.company__link:hover, .company__link:focus {
   border-color: #2196f3;
   color: #2196f3;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-.company-icon {
+.company__icon {
   fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */
