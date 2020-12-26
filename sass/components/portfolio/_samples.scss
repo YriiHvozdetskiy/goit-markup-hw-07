@@ -5,26 +5,26 @@
     margin-top: 50px;
 }
 
-.samples .link {
+.samples__link {
     transition: 250ms $time-distribution-function;
 }
 
-.samples .link:hover,
-.samples .link:focus {
+.samples__link:hover,
+.samples__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.samples .link:hover .samples-overlay,
-.samples .link:focus .samples-overlay {
+.samples__link:hover .samples__inner,
+.samples__link:focus .samples__inner {
     transform: translateY(0px);
 }
 
-.wrapper-overlay {
+.samples__box {
     position: relative;
     overflow: hidden;
 }
 
-.samples-overlay {
+.samples__inner {
     position: absolute;
     height: 100%;
     bottom: 0;
@@ -37,25 +37,25 @@
     background: rgba(33, 150, 243, 0.9);
 }
 
-.samples .item:not(:nth-child(3n)) {
+.samples__item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
-.samples .item:not(:nth-last-child(-n+3)) {
+.samples__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
 }
 
-.samples .wrapper {
+.samples__wrapper {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
 
-.samples .img {
+.samples__img {
     display: block;
 }
 
-.samples-overlay-text {
+.samples__text {
     font-size: 18px;
     line-height: 1.56;
     padding: 24px;
@@ -63,7 +63,7 @@
     color:$white-text-color;
 }
 
-.samples .title {
+.wrapper__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -72,7 +72,7 @@
     color: $title-color;
 }
 
-.samples .text {
+.wrapper__text {
     font-size: 16px;
     line-height: 1.88;
     margin: 4px 0 0;
